@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in</title>
+    <script src="../Practice/formvalidation.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./formvalidation.js"></script>
+    <link rel="icon" type="image/x-icon" href="Favicon.jpg">
+
+</head>
+<body>
+    <div class="bg">
+        <img src="./10161832.jpg" >
+        <form class="signin">
+            <h3 style="margin-top: 0px;">Sign-In  <i class="fa-solid fa-xmark fa-lg" onclick="redirect()" id="cross" ></i></h3> 
+            Don't have an account? &nbsp; <a href="./signup.html">Sign-Up</a> <br> <br>
+            <i class="fa-solid fa-user" style="color:hotpink"></i> <label for="username">Username:</label> 
+            <input type="text" id="username" name="username" placeholder="John@2003" style="width:270px;"  required><br> <br>
+            <i class="fa-solid fa-lock" style="color: hotpink"></i> <label for="password">Password:</label> 
+            <input type="password" id="password" name="password"style="width:275px;"  required> <br> <br>
+            <input type="submit" value="Sign-in"  class="button">
+        </form>
+    </div>
+
+</body>
+</html>
