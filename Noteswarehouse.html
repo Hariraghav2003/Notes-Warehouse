@@ -13,6 +13,7 @@
     <script src="./alert.js"></script>
     <script src="userdetails.js"></script>
     <link rel="stylesheet" href="./Noteswarehouse.css">
+    <script src="./searchbar.js"></script>
     <title>Notes Warehouse</title>
 
 </head>
@@ -177,7 +178,7 @@
                   <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a href="#technicalcourses">Web Design Course</a> <br> 
                 </div>
             </li>
-            <li> <i class="fa-solid fa-xl fa-magnifying-glass" id="two" ></i>  <input type="search" placeholder="Engineering Courses" class="searchbar" >  </li>
+            <li> <i class="fa-solid fa-xl fa-magnifying-glass" id="two" ></i>  <input type="search" placeholder="Engineering Courses" class="searchbar" id="search" onkeydown="hello(event)">  </li>
             <li><a href="./signin.html" style="margin-left:15px;"> Sign-in</a></li>
             <li> <a href="./signup.html"style="margin-left:15px;">Sign-up </a></li>
         </ul>
@@ -280,7 +281,7 @@
                                     <p class="card-text">
                                       Internet of things describes devices with sensors, processing ability, software and other technologies that connect and 
                                       exchange data with other devices and systems over the Internet or other communication networks. 
-                                      The Internet of things encompasses electronics, communication, and computer science engineering. 
+                                      The Internet of things encompasses electronics and computer science engineering. 
                                     </p>
                                   </div>
                                 </div>
@@ -496,7 +497,7 @@
                   <a href=""> <div class="card" >
                     <img src="./python-fiullstack-1.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">MEAN Stack </h5>
+                      <h5 class="card-title">Python FullStack </h5>
                       <p class="card-text">Skills Covered:</p>
                     </div>
                     <ul class="list-group list-group-flush">
@@ -525,11 +526,7 @@
       </div>
     </section>
     <!-- Alert check -->
-     <center>
-      <div class="alert" id="alert">
 
-      </div>   
-    </center>
     <div class="userrequest">
       <center> 
         <h3> User Request Box </h3>
@@ -556,9 +553,9 @@
       <div class="aboutus">
         <h2> About us </h2> 
           <span><i class="fa-solid fa-location-dot"></i> India</span> <br>
-          <span> for Collaboration cantact us <i class="fa-solid fa-envelope"></i> </span> <br>
-          <span> Support us & Follow us <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-x-twitter"></i> <i class="fa-brands fa-discord"></i> </span> <br>
-          <span>For any queries conatct us <i class="fa-solid fa-message"></i> </span>
+          <span> for Collaboration contact us <i class="fa-solid fa-envelope"></i> </span> <br>
+          <span> Support & Follow us <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-x-twitter"></i> <i class="fa-brands fa-discord"></i> </span> <br>
+          <span>For any queries contact us <i class="fa-solid fa-message"></i> </span>
       </div> 
       
       <div class="services">
@@ -580,5 +577,6 @@
         <img src="./Favicon.jpg" height="190px" width="150px">
       </div>
      </footer>
+
 </body>
 </html>
