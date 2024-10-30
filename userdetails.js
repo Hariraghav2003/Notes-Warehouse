@@ -6,5 +6,5 @@ function userdetails(){
   function request(){
     const request=document.getElementById('userrequest').value;
     console.log("User requested:"+request);
-    window.alert("Your request has been received! We’re processing it and will update shortly.")
+    window.alert("Your request has been received! We’re processing it and will update shortly.");
   }
