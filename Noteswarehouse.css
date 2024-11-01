@@ -205,6 +205,9 @@ footer a:hover{
   padding-bottom: 3px; 
   
 }
+.bar{
+  color: black;
+}
 @media screen and (min-width:481px) and (max-width:768px) {
   .alert{
       position: fixed;
