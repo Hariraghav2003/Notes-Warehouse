@@ -21,6 +21,17 @@
         color: black;
       }
     </style>
+         <script>
+          function signinalert(){
+            Swal.fire({
+              title: "Sign-in!!",
+              html: `
+                Kindly Sign-in to continue!!
+                <a href="signin.html" target="_blank" autofocus> Sign-in</a>`,
+              icon: "warning",
+            });
+          }
+         </script>
 </head>
 <body>
     <!-- Navbar -->
@@ -48,8 +59,8 @@
                       <div class="accordion-body">
                         <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="./sem1cse.html">Semester 1</a> <br>
                         <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="./sem2cse.html">Semester 2</a> <br>
-                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a>Semester 3</a> <br>
-                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a>Semester 4</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="./sem3cse.html">Semester 3</a> <br>
+                        <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="./sem4cse.html">Semester 4</a> <br>
                         <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a>Semester 5</a> <br>
                         <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a>Semester 6</a> <br>
                         <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a>Semester 7</a> <br>
@@ -201,7 +212,7 @@
                 Technical Courses <i class="fa-solid fa-angle-down fa-xs"></i> 
                 <div class="dropdowncontent" style="width: 220px;">
                   <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> <a href="Noteswarehouse.html#fc">Fullstack Development </a> <br>
-                  <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a href="Noteswarehouse.html#fc">UI/UX Design</a> <br>
+                  <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a href="Noteswarehouse.html#ui">UI/UX Design</a> <br>
                   <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a href="Noteswarehouse.html#wd">Web Design Course</a> <br> 
                 </div>
             </li>
@@ -485,7 +496,7 @@
                   The frontend contains the user interface and code related to user interactions with the application,
                 </span> <br> <br>
                 <div class="fullstackcourses">
-                 <a href=""  onclick="checkalert()"> <div class="card">
+                 <a  onclick="signinalert()"> <div class="card">
                     <img src="./javafullstack.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Java Fullstack </h5>
@@ -497,7 +508,7 @@
                       <li class="list-group-item"><i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>Database:SQL/PostgreSQL</li>
                     </ul>
                   </div> </a>
-                  <a href=""> <div class="card" >
+                  <a  onclick="signinalert()"> <div class="card" >
                     <img src="./Mern.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">MERN Stack </h5>
@@ -509,7 +520,7 @@
                       <li class="list-group-item"><i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>Database:MongoDB</li>
                     </ul>
                   </div> </a>
-                  <a href=""> <div class="card" >
+                  <a  onclick="signinalert()"> <div class="card" >
                     <img src="./Mean.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">MEAN Stack </h5>
@@ -521,7 +532,7 @@
                       <li class="list-group-item"><i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>Database:MongoDB</li>
                     </ul>
                   </div> </a>
-                  <a href=""> <div class="card" >
+                  <a  onclick="signinalert()"> <div class="card" >
                     <img src="./python-fiullstack-1.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Python FullStack </h5>
