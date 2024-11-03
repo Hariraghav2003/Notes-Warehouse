@@ -170,8 +170,22 @@
           padding-bottom: 3px; 
           
         }
+        .lab>.card{
+          width:80%;
+          margin-left: 125px;
+        }
+        .lab>.card img{
+          height: 400px;
+        }
         @media screen and (min-width:481px) and (max-width:768px) 
         {
+          .lab>.card{
+            width: 300px;
+            margin-left: 100px;
+          }
+          .lab>.card img{
+            height: 300px;
+          }
           .searchbar{
               border-style:solid;
               border-color: black;
@@ -244,5 +258,6 @@
               margin-left: 150px;
 
             }
+
 
         }
