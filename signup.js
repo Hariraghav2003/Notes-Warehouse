@@ -19,11 +19,7 @@ document.getElementById('userdetail').addEventListener('submit', function(event)
     // const formattedDate = `${year}-${month}-${day}`;
     const dobObj = new Date(dob);
     const doby= dobObj.getFullYear();
-    console.log(doby);
-    console.log(year);
     const age=year-doby;
-    console.log(age);
-
     if (password===rpassword && age>=12){
         const userdetails={};
         userdetails.Firstname=Firstname;
@@ -34,7 +30,11 @@ document.getElementById('userdetail').addEventListener('submit', function(event)
         userdetails.username=username;
         userdetails.password=password;
         userdetails.date=new Date();
-        console.log( userdetails.Firstname + "," + userdetails.Lastname +","+ userdetails.address+","+userdetails.dob+","+userdetails.username+","+userdetails.password+","+userdetails.date);
+        let ud = "";
+        for (let x in userdetails) {
+            ud += `${x}: ${userdetails[x]}\n`; // Adds property name and value with a newline
+        }
+        console.log(ud);
     }
     else if(age<=11){
         let message= document.getElementById("error");

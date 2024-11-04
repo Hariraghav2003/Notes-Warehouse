@@ -2,6 +2,7 @@ function userdetails(){
     const username=document.getElementById('name').value;
     const email=document.getElementById('email').value;
     console.log("Username:"+username+","+"E-mail:"+email);
+    alert("Subscribed!!");
   }
   function request(){
     const request=document.getElementById('userrequest').value;
