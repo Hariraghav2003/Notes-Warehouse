@@ -150,9 +150,11 @@ nav a:hover{
   grid-template-columns: auto auto auto auto;
   width: 100px;
   column-gap: 40px;
+
 }
 .webdesigncourses img{
   width: 300px;
+  height: 200px;
 }
 .fullstackcourses img{
   height: 300px;
@@ -208,6 +210,10 @@ footer a:hover{
 .bar{
   color: black;
 }
+.bar{
+  color: black;
+}
+
 @media screen and (min-width:481px) and (max-width:768px) {
   .alert{
       position: fixed;

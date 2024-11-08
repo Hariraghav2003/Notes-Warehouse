@@ -16,22 +16,13 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>  
     <script src="./searchbar.js"></script>
     <link rel="stylesheet" href="./searchbar.css">
+    <link rel="stylesheet" href="./smdevice.css">
     <title>Notes Warehouse</title>
     <style>
-      .bar{
-        color: black;
-      }
+
     </style>
          <script>
-          function signinalert(){
-            Swal.fire({
-              title: "Sign-in!!",
-              html: `
-                Kindly Sign-in to continue!!
-                <a href="signin.html" target="_blank" autofocus> Sign-in</a>`,
-              icon: "warning",
-            });
-          }
+
          </script>
 </head>
 <body>
@@ -224,8 +215,10 @@
                   
                 </ul>
             </li>
-            <li><a href="./signin.html" style="margin-left:15px;" target="_blank"> Sign-in</a></li>
-            <li> <a href="./signup.html"style="margin-left:15px;" target="_blank">Sign-up </a></li>
+            <div class="usersignin" id="usersignin">
+              <li><a href="./signin.html" style="margin-left:15px; text-decoration: none;" target="_blank" > Sign-in</a></li>
+              <li> <a href="./signup.html"style="margin-left:15px; text-decoration:none;" target="_blank">Sign-up </a></li>
+            </div>
         </ul>
     </nav>
     <!-- First Carousel -->
@@ -437,7 +430,8 @@
             <div id="flush-collapseThirteen" class="accordion-collapse collapse" aria-labelledby="flush-headingThirteen" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
                 <div class="webdesigncourses">
-                  <a href="./webdevelopment.html"> <div class="card" >
+                  <a onclick="signinalertwd()"> 
+                    <div class="card" >
                     <img src="./The-Fundamentals-of-Front-End-Web-Development.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Web Development Fundamentals  </h5>
@@ -449,40 +443,40 @@
                       <li class="list-group-item"><i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> Javascript </li>
                     </ul>
                   </div> </a>
-                  <a href="./webdevelopment.html"> <div class="card" >
+                  <a onclick="development()"> <div class="card" >
                     <img src="./underconstruction.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Under Construction </h5>
                       <p class="card-text">Under Construction</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                      <li class="list-group-item"><i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> </li>
-                      <li class="list-group-item"><i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> </li>
-                      <li class="list-group-item"><i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  </li>
+                      <li class="list-group-item"><i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> lorem </li>
+                      <li class="list-group-item"><i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> lorem </li>
+                      <li class="list-group-item"><i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> lorem  </li>
                     </ul>
                   </div> </a>
-                  <a href="./webdevelopment.html"> <div class="card" >
+                  <a onclick="development()"> <div class="card" >
                     <img src="./underconstruction.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Under Construction </h5>
                       <p class="card-text">Under Construction</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                      <li class="list-group-item"><i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> </li>
-                      <li class="list-group-item"><i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i></li>
-                      <li class="list-group-item"><i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  </li>
+                      <li class="list-group-item"><i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> lorem </li>
+                      <li class="list-group-item"><i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> loem </li>
+                      <li class="list-group-item"><i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> lorem </li>
                     </ul>
                   </div> </a>
-                  <a href="./webdevelopment.html"> <div class="card" >
+                  <a onclick="development()"> <div class="card" >
                     <img src="./underconstruction.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Under Construction </h5>
                       <p class="card-text">Under Construction</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                      <li class="list-group-item"><i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> </li>
-                      <li class="list-group-item"><i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i></li>
-                      <li class="list-group-item"><i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> </li>
+                      <li class="list-group-item"><i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> lorem </li>
+                      <li class="list-group-item"><i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> loem </li>
+                      <li class="list-group-item"><i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i> lorem </li>
                     </ul>
                   </div> </a>
                 </div>
@@ -503,7 +497,7 @@
                   The frontend contains the user interface and code related to user interactions with the application,
                 </span> <br> <br>
                 <div class="fullstackcourses">
-                 <a  onclick="signinalert()"> <div class="card">
+                 <a  onclick="signinalertjf()"> <div class="card">
                     <img src="./javafullstack.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Java Fullstack </h5>
@@ -515,7 +509,7 @@
                       <li class="list-group-item"><i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>Database:SQL/PostgreSQL</li>
                     </ul>
                   </div> </a>
-                  <a  onclick="signinalert()"> <div class="card" >
+                  <a  onclick="signinalertms()"> <div class="card" >
                     <img src="./Mern.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">MERN Stack </h5>
@@ -527,7 +521,7 @@
                       <li class="list-group-item"><i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>Database:MongoDB</li>
                     </ul>
                   </div> </a>
-                  <a  onclick="signinalert()"> <div class="card" >
+                  <a  onclick="signinalertma()"> <div class="card" >
                     <img src="./Mean.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">MEAN Stack </h5>
@@ -539,7 +533,7 @@
                       <li class="list-group-item"><i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>Database:MongoDB</li>
                     </ul>
                   </div> </a>
-                  <a  onclick="signinalert()"> <div class="card" >
+                  <a  onclick="signinalertpf()"> <div class="card" >
                     <img src="./python-fiullstack-1.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Python FullStack </h5>
@@ -581,7 +575,7 @@
         <input type="submit" value="Submit" style="background-color: #F2618B; color: white; padding-left: 5px; padding-right: 5px; border: none; border-radius: 5px; padding-top: 3px; padding-bottom: 3px; margin-top: 10px; ">
       </form>
       </center>
-
+      
     </div>
      <footer>
       <div class="updates">
@@ -622,6 +616,8 @@
         <img src="./Favicon.jpg" height="190px" width="150px">
       </div>
      </footer>
-
+     <script src="signinchecknav.js">
+      
+     </script>
 </body>
 </html>

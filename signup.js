@@ -10,13 +10,8 @@ document.getElementById('userdetail').addEventListener('submit', function(event)
     const username=document.getElementById("Username").value;
     const password=document.getElementById("Password").value;
     const rpassword=document.getElementById("rpassword").value;
-    // console.log(password);
-    // console.log(rpassword);
     const currentDate = new Date();
     const year = currentDate.getFullYear();
-    // const month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
-    // const day = currentDate.getDate().toString().padStart(2, '0');
-    // const formattedDate = `${year}-${month}-${day}`;
     const dobObj = new Date(dob);
     const doby= dobObj.getFullYear();
     const age=year-doby;
@@ -35,6 +30,7 @@ document.getElementById('userdetail').addEventListener('submit', function(event)
             ud += `${x}: ${userdetails[x]}\n`; // Adds property name and value with a newline
         }
         console.log(ud);
+        localStorage.setItem(userdetails.username,JSON.stringify(userdetails));
     }
     else if(age<=11){
         let message= document.getElementById("error");
@@ -64,7 +60,7 @@ document.getElementById('userdetail').addEventListener('submit', function(event)
             icon: "success",
             
         }).then((result) => {
-            if (result.isConfirmed) {  // Checks if the user clicked "OK" to close the popup
+            if (result.isConfirmed) {  
                 history.replaceState(null, null, "signin.html");
                 location.replace( 'signin.html');  
             }
@@ -72,6 +68,3 @@ document.getElementById('userdetail').addEventListener('submit', function(event)
         
     }
 });
-function redirect(){
-    window.location.href='Noteswarehouse.html';
-}
