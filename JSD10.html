@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>JavaScript Day 8</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Day 10</title>
     <link rel="icon" type="image/x-icon" href="../Favicon.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -17,8 +17,8 @@
     <script src="../HTML CSS/sb.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="../searchbar.css">
-    <link rel="stylesheet" href="../smdevice.css">
     <link rel="stylesheet" href="../signnavbar.css">
+    <link rel="stylesheet" href="../smdevice.css">
 </head>
 <body>
   <nav>
@@ -216,86 +216,125 @@
           </div>
     </ul>
 </nav>
-<center><h1 style="font-weight: bolder;"> JavaScript Day 8 </h1></center>
-    <h1> ArrayIteration Methods </h1>
+<center><h1 style="font-weight: bolder;"> JavaScript Day 10 </h1></center>
+    <h1>Control Statements</h1>
     <p>
-        Array Iteration Method are used to access each any element of the array or perform any operation or function on it
-        <ol>
-            <li>foreach(): to display or to iterate over each element</li>
-            <li>map():to perform function on each element</li>
-            <li>flatmap():Converts the sub array into single array and performs function overit</li>
-            <li>filter():To sort the elementss in an array based on a condition</li>
-            <li>reduce():It's same as foreach but it takes an addtional parameter total</li>
-            <li>reduceRight():Same as reduce() but it works from right to left</li>
-            <li>every():Same as filter() but it all the elements should satisfy the contents and returns boolean values </li>
-            <li>some():Same as every() but any one of the elements should satisfy the condition </li>
-            <li>from():to convert string to array</li>
-            <li>keys(): returns the indexes of array</li>
-            <li>entries():returns the key value pair</li>
-            <li>with():to update the element of the array using index value</li>
-            <li>spred(...):To print multiple arrays in one line</li>
-        </ol>
-    </p>
-    <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center">
-          <li class="page-item">
-            <a class="page-link" href="./JSD7.html" tabindex="-1" aria-disabled="true">Previous</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="./JSD9.html">Next</a>
-          </li>
+        Javascript control statements are If..else,else if,Switch statements
+        <ul>
+            <li>
+                in If..else statement there will be a condtion in if block if the condtion is true it will execute the part or if it's false the code define in the else part will be excuted
+            </li>
+            <li>
+                else if statement contains the second condtion if the condtion in the if block is false then it will check the condtion in the else if and if it's true it will be executed
+            </li>
+            <li>
+                Switch statements are same as if statements but it contains three keywords case,default,break. The case contains the code which is wanted to be executed,break is if any one of the case is executed then other part of code will not be executed
+                default is like else part 
+            </li>
         </ul>
-      </nav>
-    <div class="userrequest">
-        <center> 
-          <h3> User Request Box </h3>
-        <form onsubmit="request()">
-          <label for="Request"></label>
-          <input type="text" placeholder="Leave Your request here" id="userrequest" required style="width: 450px; border-radius:20px; border:hotpink solid 3px;">  
-          <input type="submit" value="Submit" style="background-color: #F2618B; color: white; padding-left: 5px; padding-right: 5px; border: none; border-radius: 5px; padding-top: 3px; padding-bottom: 3px; margin-top: 10px; ">
-        </form>
-        </center>
-    
-      </div>
-       <footer>
-        <div class="updates">
-          <h1>Get Updates</h1>
-          <p> Stay in the touch with our latest notes and courses—subscribe for updates!</p>
-          <form onsubmit="userdetails()">
-            <label for="name"></label>
-            <input type="text" placeholder="Name" id="name" required>
-            <label for="email"></label>
-            <input type="text" placeholder="E-mail" id="email" required style="margin-right:10px"> 
-            <input type="submit" value="Subscribe" class="subscribebutton">
-          </form>
-        </div> 
-        <div class="aboutus">
-          <h2> About us </h2> 
-            <span><i class="fa-solid fa-location-dot"></i> India</span> <br>
-            <span> for Collaboration contact us <a href="https://mailto:hariraghava21s@gmail.com" target="_blank"> <i class="fa-solid fa-envelope"></i> </a>  </span> <br>
-            <span> Support & Follow us <a href="https://www.instagram.com/hariraghav_hr/profilecard/?igsh=MWpndzR0bTB1b243aw==" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>  <a href="https://x.com/Hariraghav2003?t=kr08Z5q3mydajSF7op67tg&s=08" target="_blank"> <i class="fa-brands fa-x-twitter"></i> </a> <a href="https://discordapp.com/users/972496342939222036/" target="_blank"> <i class="fa-brands fa-discord"></i> </a> </span> <br>
-            <span>For any queries contact us <i class="bi bi-headset fa-lg" onclick="support()" style="cursor: pointer;"></i> </span>
-        </div> 
+    </p>
+    <h1>Looping Statements</h1>
+    <p>
+        Looping statements are used to iterate over the elements which is of 5 types:for loop,for..of,for..in,while,do..while
+        <ul>
+            <li>forloop:used to iterate over the elements based on condtion and has iterable part </li>
+            <li>for..of:used to diplay the javascript object </li>
+            <li>for..in:used to display the array elements</li>
+            <li>while:used to iterate over the element based on condtion but it doesn't have any iterables</li>
+            <li>do..while:same as while but the do part is always executed</li>
+        </ul>
+    </p>
+    <h1>Break </h1>
+    <p>
+        break statements are continue,jump
+        <ul>
+            <li>continue is used to execute the code</li>
+            <li>break is used to stop the code at a point</li>
+        </ul>
+    </p>
+    <script>
+        let x=5;
+        if(x>=5){
+            console.log("true");
+        }
+        else{
+            console.log("false");
+        }
+        switch(x){
+            case 0:
+                console.log(0);
+            case 1:
+                console.log(1);
+            case 2:
+                console.log(2);
+            default:
+                console.log("no match found");
+        }
+      
+        for(let m=1;m<=10;m++){
+            console.log(m+"x"+x+ ":"+ m*x);
+        }
+    </script>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="./JSD9.html" tabindex="-1" aria-disabled="true">Previous</a>
+              </li>
+              <li class="page-item ">
+                <a class="page-link" href="./JSD11.html" >Next</a>
+              </li>
+            </ul>
+          </nav>
+        <div class="userrequest">
+            <center> 
+              <h3> User Request Box </h3>
+            <form onsubmit="request()">
+              <label for="Request"></label>
+              <input type="text" placeholder="Leave Your request here" id="userrequest" required style="width: 450px; border-radius:20px; border:hotpink solid 3px;">  
+              <input type="submit" value="Submit" style="background-color: #F2618B; color: white; padding-left: 5px; padding-right: 5px; border: none; border-radius: 5px; padding-top: 3px; padding-bottom: 3px; margin-top: 10px; ">
+            </form>
+            </center>
         
-        <div class="services">
-            <h2> Our Services: </h2> 
-            <a href="../Noteswarehouse.html#fc">  <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; Fullstack Courses <br> </a>
-            <a href="../Noteswarehouse.html#wd"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp;  Webdesign Courses <br> </a>
-            <a href="../Noteswarehouse.html#ui"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; UI/UX Design <br> </a>
-            <a onclick="development()" style="cursor: progress;"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp;  Data Science <br> </a>
-        </div>
-        <div class="d" >
-          <a href="../cse.html"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; Computer Science and Engineering <br> </a>
-          <a  onclick="development()" style="cursor: progress;">  <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;" ></i> &nbsp; Information Technology <br> </a>
-          <a  onclick="development()" style="cursor: progress;"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; Electronics and Communications Enginnering <br> </a>
-          <a  onclick="development()" style="cursor: progress;"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; Electrical and Electronics Enginnering <br> </a>
-          <a  onclick="development()" style="cursor: progress;"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; Civil Engineering <br> </a>
-          <a  onclick="development()" style="cursor: progress;"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; Mechanical Engineering <br> </a> 
-        </div>
-        <div class="icon">
-          <img src="../Favicon.jpg" height="190px" width="150px">
-        </div>
-        </footer>
-        <script src="signinchecknavj.js"></script>
+          </div>
+           <footer>
+            <div class="updates">
+              <h1>Get Updates</h1>
+              <p> Stay in the touch with our latest notes and courses—subscribe for updates!</p>
+              <form onsubmit="userdetails()">
+                <label for="name"></label>
+                <input type="text" placeholder="Name" id="name" required>
+                <label for="email"></label>
+                <input type="text" placeholder="E-mail" id="email" required style="margin-right:10px"> 
+                <input type="submit" value="Subscribe" class="subscribebutton">
+              </form>
+            </div> 
+            <div class="aboutus">
+              <h2> About us </h2> 
+                <span><i class="fa-solid fa-location-dot"></i> India</span> <br>
+                <span> for Collaboration contact us <a href="https://mailto:hariraghava21s@gmail.com" target="_blank"> <i class="fa-solid fa-envelope"></i> </a>  </span> <br>
+                <span> Support & Follow us <a href="https://www.instagram.com/hariraghav_hr/profilecard/?igsh=MWpndzR0bTB1b243aw==" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>  <a href="https://x.com/Hariraghav2003?t=kr08Z5q3mydajSF7op67tg&s=08" target="_blank"> <i class="fa-brands fa-x-twitter"></i> </a> <a href="https://discordapp.com/users/972496342939222036/" target="_blank"> <i class="fa-brands fa-discord"></i> </a> </span> <br>
+                <span>For any queries contact us <i class="bi bi-headset fa-lg" onclick="support()" style="cursor: pointer;"></i> </span>
+            </div> 
+            
+            <div class="services">
+                <h2> Our Services: </h2> 
+                <a href="../Noteswarehouse.html#fc">  <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; Fullstack Courses <br> </a>
+                <a href="../Noteswarehouse.html#wd"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp;  Webdesign Courses <br> </a>
+                <a href="../Noteswarehouse.html#ui"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; UI/UX Design <br> </a>
+                <a onclick="development()" style="cursor: progress;"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp;  Data Science <br> </a>
+            </div>
+            <div class="d" >
+              <a href="../cse.html"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; Computer Science and Engineering <br> </a>
+              <a  onclick="development()" style="cursor: progress;">  <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;" ></i> &nbsp; Information Technology <br> </a>
+              <a  onclick="development()" style="cursor: progress;"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; Electronics and Communications Enginnering <br> </a>
+              <a  onclick="development()" style="cursor: progress;"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; Electrical and Electronics Enginnering <br> </a>
+              <a  onclick="development()" style="cursor: progress;"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; Civil Engineering <br> </a>
+              <a  onclick="development()" style="cursor: progress;"> <i class="fa-regular fa-hand-point-right fa-rotate-by" style=" --fa-rotate-angle: 000000deg;"></i> &nbsp; Mechanical Engineering <br> </a> 
+            </div>
+            <div class="icon">
+              <img src="../Favicon.jpg" height="190px" width="150px">
+            </div>
+            </footer>
+            <script src="signinchecknavj.js"></script>
 </body>
 </html>
