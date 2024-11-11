@@ -13,8 +13,11 @@ function userdetails(){
     const { value: email } = await Swal.fire({
       title: "Your email address",
       input: "email",
-      inputPlaceholder: "Enter your email address"
+      inputPlaceholder: "Enter your email address",
+      showCancelButton: true
+
     });
+    if(email!=undefined){
     const { value: text } = await Swal.fire({
       input: "textarea",
       title: "Enter your Query/issue you are facing",
@@ -34,7 +37,8 @@ function userdetails(){
       },
       showCancelButton: true
     });
-    if(email!==""){
+    console.log(email);
+    if(email!=undefined){
       if(email){
         console.log(email);
       }
@@ -54,7 +58,8 @@ function userdetails(){
         icon: "success"
       });
     }    
-  }
+    }
+}
   function development(){
     Swal.fire({
       title: "Under Construction",

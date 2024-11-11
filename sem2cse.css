@@ -154,7 +154,78 @@ footer a:hover{
   padding-bottom: 3px; 
   
 }
+.usersignin{
+  flex-wrap: wrap;
+  display: flex;
+  align-items:center;
+
+}
+
+.signinsearchbar{
+  border-style:solid;
+  border-color: black;
+  border-radius: 10px;
+  width: 300px;
+  
+  height: 30px;
+}
+.dropdowncontentu{
+  position: absolute;
+  background-color: #f9f9f9;
+
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /* padding: 12px 16px; */
+  z-index: 3;
+  width: 150px;
+  left: 1350px;
+  cursor: pointer;
+}
+.dropdowncontentu>a{
+background-color:white;
+color: black;
+padding: 0px;
+}
+.signinbar{
+  margin-left: 90px;
+}
+::selection{
+  color: white;
+  background-color: hotpink;
+}
+
+@media screen and (min-width:768px) and (max-width:1366px) {
+  body{
+    zoom: 0.85;
+  }
+}
+
 @media screen and (min-width:481px) and (max-width:768px) {
+  .dropdowncontentu{
+    left: 300px;
+    top:140px;
+  }
+  .usersignin{
+    align-content:center;
+    margin-top: -20px;
+    margin-left: 30px;
+ 
+  }
+  .s li{
+    padding-top: 0px;
+    margin-left:0px;
+  }
+  .signinsearchbar{
+    border-style:solid;
+    border-color: black;
+    border-radius: 10px;
+    width: 200px;
+    
+    height: 30px;
+  }
+  
+  #uimg{
+    margin-top: 10px;
+  }
     .card img{
         height:400px;
         width: 400px;

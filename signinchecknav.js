@@ -1,21 +1,43 @@
 
-const ss=localStorage.getItem("status");
-      console.log(typeof ss);
       function checksignin(){
-        
+        const ss=localStorage.getItem("status");
+        console.log(ss);
         if(ss==1){
           const username  = localStorage.getItem("loggedin");
           const userid = JSON.parse(localStorage.getItem(username));
           document.getElementById('usersignin').innerHTML=`
-          <li class="dropdownu" onclick="userdashboard()" ondblclick="userdashboardreset()">${userid.Firstname} ${userid.Lastname} &nbsp;<i class="bi bi-patch-check fa-solid fa-lg" style="color:hotpink"></i>
-                <div id="userdashboarddisp"> </div>
-            </li>`;
+          <div class="s">
+              <li class="signinbar">    
+              <i class="fa-solid fa-xl fa-magnifying-glass" id="two" ></i>     
+              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for courses or notes" class="signinsearchbar">
+                <ul id="myUL">
+                  
+                </ul>
+              
+              <span class="dropdownu" onclick="userdashboard()" ondblclick="userdashboardreset()" style="margin-left:20px"> <img id="uimg" src="./profile.jpg" style="width:85px; border-radius:100%;"> 
+                <div id="userdashboarddisp"> </div> </span>
+            </li>
+            </div>`;
+            const img= document.getElementById("uimg");
+            const profile=userid.profilepic;
+            if(!profile){
+
+            }
+            else{
+              img.src=profile;
+            }
         }
         
        };
        checksignin();
+       window.addEventListener("storage", (event) => {
+        if (event.key === "status") { // Only react to `status` changes
+            location.reload();
+        }
+        });
+       
        function signinalertwd(){
-
+        const ss=localStorage.getItem("status");
         if(ss==1){
           window.location.href="./webdevelopment.html";
         }
@@ -44,8 +66,16 @@ const ss=localStorage.getItem("status");
        }
        function statusclear(){
         localStorage.setItem("status",0);
-        location.replace("Noteswarehouse.html");
+        console.log(localStorage.getItem("status"));
+        location.reload();
        }
        function yourdetails(){
         location.href="userdetails.html";
        }
+
+
+
+    
+
+    
+       

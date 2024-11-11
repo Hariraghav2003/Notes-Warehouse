@@ -14,7 +14,8 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./searchbar.js"></script>
     <link rel="stylesheet" href="./searchbar.css">
-    <link rel="stylesheet" href="./smdevice.css">
+
+
     <style>
       .bar{
         color: black;
@@ -169,7 +170,7 @@
                 </div>                  
               </div>  
               <div style="margin-left: 20px;"> 
-                <a href="webdevelopment.html" style="color:black; "> Web Development Fundamentals </a> <br> <hr style="width: 105%; margin-left: -20px;" >  
+                <a style="color:black; cursor: pointer; " onclick="signinalertwd()"> Web Development Fundamentals </a> <br> <hr style="width: 105%; margin-left: -20px;" >  
                 <a href="" style="color:black; "> Java Fullstack </a> <br> <hr style="width: 105%; margin-left: -20px;" >  
                 <a href="" style="color:black; ">MERN Stack </a> <br> <hr style="width: 105%; margin-left: -20px; opacity:calc(0.15); color: inherit;" > 
                 <a href="" style="color: black;">MEAN Stack</a> <br> <hr style="width: 105%; margin-left: -20px;" > 
@@ -205,15 +206,17 @@
                 <i class="fa-regular fa-hand-point-right fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 000000deg;"></i>  <a href="Noteswarehouse.html#wd">Web Design Course</a> <br> 
               </div>
           </li>
-          <li> 
-            <i class="fa-solid fa-xl fa-magnifying-glass" id="two" ></i>   
-            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Engineering Courses" class="searchbar" >
-              <ul id="myUL">
-                
-              </ul>
-          </li>
-          <li><a href="./signin.html" style="margin-left:15px;"  target="_blank"> Sign-in</a></li>
-          <li> <a href="./signup.html"style="margin-left:15px;" target="_blank">Sign-up </a></li>
+          <div class="usersignin" id="usersignin">
+            <li>
+              <i class="fa-solid fa-xl fa-magnifying-glass" id="two" ></i>   
+              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Engineering Courses" class="searchbar" >
+                <ul id="myUL">
+                  
+                </ul>
+            </li>
+              <li><a href="./signin.html" style="margin-left:15px; text-decoration: none;" target="_blank" > Sign-in</a></li>
+              <li> <a href="./signup.html"style="margin-left:15px; text-decoration:none;" target="_blank">Sign-up </a></li>
+            </div>
       </ul>
   </nav>
     <center><h1 style="font-weight: bolder;"> Semester 6 Subjects </h1></center>
@@ -382,5 +385,6 @@
         <img src="./Favicon.jpg" height="190px" width="150px">
       </div>
      </footer>
+     <script src="signinchecknav.js"></script>
 </body>
 </html>

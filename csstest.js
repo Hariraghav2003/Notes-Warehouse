@@ -1,3 +1,7 @@
+const login=localStorage.getItem("loggedin");
+const u=localStorage.getItem(login);
+const ud=JSON.parse(u);
+console.log(ud);
 function ansvalidation(event) {
     event.preventDefault();
     let mark=0;
@@ -72,5 +76,6 @@ function ansvalidation(event) {
         });
 
     }
-
+    ud.cssscore=mark;
+    localStorage.setItem(login,JSON.stringify(ud));
 }

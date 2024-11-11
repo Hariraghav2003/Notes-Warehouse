@@ -36,14 +36,15 @@ a{
     position:absolute; 
     top:200px;
     background-color: hotpink; 
-    height: 90px;
+    height: 100px;
     width:250px; 
     color: white; 
     left:850px;
-    padding-left: 60px;
-    padding-top: 25px;
+    padding-left: 65px;
+    padding-top: 40px;
     display: none;
     cursor: pointer;
+   
 }
 .change:hover .changeprofile{
     display:block;
@@ -64,5 +65,16 @@ a{
         flex-direction: column-reverse;
         flex-wrap: wrap;
         column-gap: 0px;
+    }
+    .dropdown{
+        display: none;
+    }
+    nav ul img{
+      height: 50px;
+      width: 400px;
+      margin-bottom: 20px;
+    }
+    .dropdown{
+        display:none;
     }
 }
